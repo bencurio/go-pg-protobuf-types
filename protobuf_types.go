@@ -1,4 +1,4 @@
-package protobuf_types
+package go_pg_protobuf_types
 
 import (
 	"fmt"
