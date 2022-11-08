@@ -10,7 +10,7 @@ db := pg.Connect(&pg.Options{
 })
 
 // Register protobuf appender and scanner
-protobuf_types.RegisterAppenderAndScanner()
+go_pg_protobuf_types.RegisterAppenderAndScanner()
 
 ctx := context.Background()
 
