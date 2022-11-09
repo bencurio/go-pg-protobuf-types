@@ -171,7 +171,7 @@ func BytesValueScanner(v reflect.Value, rd types.Reader, n int) error {
 }
 
 func TimestampAppender(in []byte, v reflect.Value, flags int) []byte {
-	pbts := v.Interface().(timestamppb.Timestamp)
+	pbts := v.Interface().(*timestamppb.Timestamp)
 	if err := pbts.CheckValid(); err != nil {
 		panic(err)
 	}
